@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Polisetti M N Venkata Sai Deepak | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Roboto', sans-serif; background: #f4f4f4; color: #333; overflow-x: hidden; }
+    header {
+      background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 { font-size: 2.8em; }
+    header p { font-size: 1.2em; opacity: 0.9; }
+    
+    /* Vertical Navigation */
+    nav {
+      width: 300px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      background-color: #142d4c;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 20px;
+    }
+    nav a {
+      display: block;
+      text-align: center;
+      padding: 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.3em;
+      transition: 0.3s;
+    }
+    nav a:hover { background-color: #314e69; }
+
+    /* Smooth Page Transitions */
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 50px 30px;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+    }
+    section.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    h2 { font-size: 2.2em; margin-bottom: 20px; color: #0f2027; }
+
+    /* Certificates Styling */
+    .cert-grid { display: flex; flex-wrap: wrap; gap: 30px; }
+    .cert-section { flex: 1; min-width: 45%; }
+    .btn-download {
+      display: inline-block;
+      padding: 12px 25px;
+      background: #1e3c72;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 1.2rem;
+    }
+
+    footer {
+      text-align: center;
+      background: #0f2027;
+      color: white;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Polisetti M N Venkata Sai Deepak</h1>
+    <p>AI & ML Developer | Researcher | Web Specialist</p>
+  </header>
+
+  <nav>
+    <a href="about.html">About Me</a>
+    <a href="projects.html">Projects</a>
+    <a href="achievements.html">Achievements</a>
+    <a href="certificates.html">Internships & Certificates</a>
+    <a href="resume.html">Resume</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <footer>
+    <p>&copy; 2025 Polisetti M N Venkata Sai Deepak | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    function showSection(id) {
+      window.location.href = id + ".html"; // Redirect to a separate page
+    }
+  </script>
+</body>
+</html>

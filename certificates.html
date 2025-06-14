@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Polisetti M N Venkata Sai Deepak | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Roboto', sans-serif; background: #f4f4f4; color: #333; overflow-x: hidden; }
+    header {
+      background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header img {
+      width: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px #000;
+    }
+    header h1 { font-size: 2.8em; }
+    header p { font-size: 1.2em; opacity: 0.9; }
+
+    nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #142d4c;
+    }
+    nav a {
+      padding: 20px 30px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.3em;
+      width: 100%;
+      text-align: center;
+      border-bottom: 1px solid #1e3c72;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background-color: #314e69;
+    }
+
+    section {
+      display: none;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 80px 30px;
+      animation: fadeIn 0.8s ease-in-out;
+    }
+    section.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h2 {
+      font-size: 2.2em;
+      margin-bottom: 20px;
+      color: #0f2027;
+    }
+
+    ul li {
+      margin-bottom: 12px;
+      font-size: 1.2em;
+    }
+
+    .btn-download {
+      display: inline-block;
+      padding: 12px 25px;
+      background: #1e3c72;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      margin-top: 15px;
+    }
+
+    footer {
+      background: #0f2027;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 0.95em;
+    }
+
+    #chatbox {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      background: white;
+      border: 1px solid #ccc;
+      width: 300px;
+      padding: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      z-index: 999;
+    }
+
+    #chatbox input, #chatbox textarea {
+      width: 100%;
+      margin-top: 10px;
+      padding: 8px;
+      font-size: 1em;
+    }
+
+    #chatbox button {
+      background: #203a43;
+      color: white;
+      padding: 8px 15px;
+      border: none;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    /* Thank You Styling */
+    #thank-you {
+      background: #d1e7dd;
+      color: #0f5132;
+      text-align: center;
+      padding: 60px 20px;
+      border-radius: 10px;
+      margin: 100px auto;
+      max-width: 800px;
+    }
+    #thank-you h2 {
+      font-size: 2.4em;
+      color: #0f5132;
+      margin-bottom: 20px;
+    }
+    #thank-you p {
+      font-size: 1.3em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="130065029.png" alt="Deepak">
+    <h1>Polisetti M N Venkata Sai Deepak</h1>
+    <p>AI & ML Developer | Researcher | Web Specialist</p>
+  </header>
+
+  <nav>
+    <a href="#about" onclick="showSection('about')">About</a>
+    <a href="#projects" onclick="showSection('projects')">Projects</a>
+    <a href="#certificates" onclick="showSection('certificates')">Certificates</a>
+    <a href="#timeline" onclick="showSection('timeline')">Timeline</a>
+    <a href="#testimonials" onclick="showSection('testimonials')">Testimonials</a>
+    <a href="#blog" onclick="showSection('blog')">Publications</a>
+    <a href="#resume" onclick="showSection('resume')">Resume</a>
+    <a href="#contact" onclick="showSection('contact')">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a B.Tech (CSE - AI & ML) undergraduate from Uttaranchal University, Dehradun. I specialize in artificial intelligence, web development, and ethical tech innovation. I've collaborated with organizations like Deloitte, JP Morgan, Tata, and Microsoft.</p>
+    <p>My goal is to pursue a fully-funded master's degree abroad (e.g., Germany - TUM, or Korea - KAIST, SNU) and contribute to research in AI governance and NLP.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>Sentiment Analysis AI — <a href="https://github.com/DEEPAK21072005/Emotion-Detection-Using-NLP" target="_blank">GitHub</a></li>
+      <li>Expense Tracker Pro — <a href="https://github.com/DEEPAK21072005/Expense-Tracker-App-" target="_blank">GitHub</a></li>
+      <li>Fake News Detector — <a href="https://github.com/DEEPAK21072005/Fake-News-Detector" target="_blank">GitHub</a></li>
+    </ul>
+  </section>
+
+  <section id="certificates">
+    <h2>Certificates & Internships</h2>
+    <ul>
+      <li><a href="JP MORGAN INTERNSHIP CERTIFICATE.pdf" download>JP Morgan Internship</a></li>
+      <li><a href="microsoft certificate.pdf" download>Microsoft Certificate</a></li>
+      <li><a href="Java_Certificate.pdf" download>Java Certificate</a></li>
+      <li><a href="infosys web development.pdf" download>Infosys Web Development</a></li>
+      <li><a href="ICASDGAI.pdf" download>ICASDGAI Conference</a></li>
+      <li><a href="Deloitte Job Simulation.pdf" download>Deloitte Job Simulation</a></li>
+      <li><a href="TATA DATA VISUALIZATION.pdf" download>TATA Data Visualization</a></li>
+      <li><a href="NISM .pdf" download>NISM Certification</a></li>
+    </ul>
+  </section>
+
+  <section id="timeline">
+    <h2>Timeline / Experience</h2>
+    <ul>
+      <li>2021 - SSC @ Minerva Institution</li>
+      <li>2023 - Intermediate @ Sri Viswa IIT And Medical Sciences</li>
+      <li>2024-2025 - Internships @ HarwardX, Microsoft, Deloitte, JP Morgan, Tata and Infosys</li>
+      <li>2025 - AI Paper @ ICASDGAI</li>
+    </ul>
+  </section>
+
+  <section id="testimonials">
+    <h2>Testimonials</h2>
+    <blockquote>"Deepak is a curious learner, always eager to explore new things in AI and tech." — Internship Mentor</blockquote>
+    <blockquote>"He consistently puts effort into every task and shows great interest in solving real problems." — Peer at ICASDGAI</blockquote>
+  </section>
+
+  <section id="blog">
+    <h2>Publications & Blog</h2>
+    <p>📝 Coming Soon: Articles on AI policy, sentiment tech, and NLP models.</p>
+  </section>
+
+  <section id="resume">
+    <h2>Download Resume</h2>
+    <a href="DP_RESUME.pdf" class="btn-download" download>Download My Resume (PDF)</a>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <ul>
+      <li>Email: <a href="mailto:polisettideepak14348@gmail.com">polisettideepak14348@gmail.com</a></li>
+      <li>Phone: +91-7981585468</li>
+      <li>GitHub: <a href="https://github.com/Deepak-Polisetti" target="_blank">github.com/Deepak-Polisetti</a></li>
+      <li>Kaggle: <a href="https://kaggle.com/deepakpolisetti" target="_blank">kaggle.com/deepakpolisetti</a></li>
+      <li>LinkedIn: <a href="https://linkedin.com/in/deepakpolisetti" target="_blank">linkedin.com/in/deepakpolisetti</a></li>
+    </ul>
+  </section>
+
+  <!-- THANK YOU SECTION -->
+  <section id="thankyou">
+    <h2>✅ Thank You!</h2>
+    <p>Thanks for reaching out, your message has been received.<br>I'll respond to your email shortly. 😊</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Deepak Polisetti | All Rights Reserved</p>
+  </footer>
+
+  <div id="chatbox">
+    <strong>📨 Message Deepak</strong>
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email (for reply)" required>
+      <textarea name="message" placeholder="Type your message here..." rows="4" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+      setTimeout(() => {
+        document.getElementById(id).scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 100);
+    }
+
+    // AJAX form submission + redirect to thank-you section
+    document.getElementById("contact-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const form = e.target;
+      const formData = new FormData(form);
+
+      fetch("https://formsubmit.co/ajax/polisettideepak14348@gmail.com", {
+        method: "POST",
+        headers: { "Accept": "application/json" },
+        body: formData
+      })
+      .then(response => {
+        if (response.ok) {
+          form.reset();
+          showSection("thankyou");
+        } else {
+          alert("Failed to send message. Try again.");
+        }
+      })
+      .catch(error => {
+        console.error(error);
+        alert("Something went wrong.");
+      });
+    });
+  </script>
+</body>
+</html>
